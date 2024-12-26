@@ -4,7 +4,7 @@ This repository contains a Python code designed to model and analyze the bisecto
 
 ## Overview
 
-The primary goal of the code is to show that a Doppler shift is required to reproduce the observed bisector-RV plane, confirming the influence of an orbiting planet. The simulation models the combined effects of a star’s surface hot spot and a planet on the observed CCF profile.
+The primary goal of the code is to show that a Doppler shift is required to reproduce the observed bisector-RV plane, confirming the influence of an orbiting planet. The simulation models the combined effects of a star’s surface hot spot and a planet on the observed CCF profile. In the case of only a hot-spot modulation and no doppler shift (see video: ccfs_bisector_static.mp4), the bisector plane is not modelled accurately.
 
 ## Features
 
