@@ -2,11 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 from random import random
+import os
 
 class BisectorModel:
     def __init__(self, data_file, output_dir="output/"):
         self.data_file = data_file
         self.output_dir = output_dir
+        
+        #check if the output folder exists, if not create it
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+            
         self.x = np.linspace(0, 100, 10000)
         self.BIS_list = []
         self.miny_list = []
