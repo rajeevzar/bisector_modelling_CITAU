@@ -33,7 +33,10 @@ class BisectorModel:
         self.frequency_motion_spot = 0.11  # 9 days
 
     def load_data(self):
-        self.BIS_obs, self.RV_obs, self.RV_obs_err = np.loadtxt(
+            """Load observational data from the specified file. 
+            Columns 3, 4, and 5 are assumed to contain BIS, RV, and RV error values."""
+        
+    self.BIS_obs, self.RV_obs, self.RV_obs_err = np.loadtxt(
             self.data_file, usecols=(3, 4, 5), skiprows=1, unpack=True
         )
         self.BIS_obs_err = self.RV_obs_err
